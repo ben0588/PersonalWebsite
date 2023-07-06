@@ -16,7 +16,7 @@ const Header = () => {
         },
     ];
     return (
-        <header className='container sticky-top d-flex justify-content-between align-items-center header-bg-filter flex-column flex-sm-row pt-2 pt-sm-0 py-2 py-sm-3'>
+        <header className='container sticky-top d-flex justify-content-between align-items-center header-bg-filter flex-column flex-sm-row  py-2 py-sm-3'>
             <h1 className='mb-0'>
                 <Link to='/'>
                     <img src={logoImg} alt='logo' className='header-logo-img' />
