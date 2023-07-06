@@ -1,0 +1,16 @@
+.link-dark {
+    &:hover {
+        color: rgba(0, 0, 0, 0.644) !important;
+    }
+}
+
+.link-primary-fill-hover {
+    transition: fill 0.1s ease-in;
+    &:hover {
+        fill: #0984e3 !important;
+    }
+}
+
+.bg-black {
+    background: black;
+}
