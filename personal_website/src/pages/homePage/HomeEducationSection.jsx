@@ -1,7 +1,7 @@
 const HomeEducationSection = () => {
     const educationList = [
         { schoolName: '南開科技大學', facultyName: '資訊管理系', during: '2010/6 ~ 2014/6' },
-        { schoolName: '南投高商', facultyName: '資料處理科', during: '2010/6 ~ 2014/6' },
+        { schoolName: '南投高商', facultyName: '資料處理科', during: '2007/6 ~ 2010/6' },
     ];
 
     return (

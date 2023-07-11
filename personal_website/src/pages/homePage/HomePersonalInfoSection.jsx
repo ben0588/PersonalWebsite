@@ -4,6 +4,7 @@ import { BiLogoGmail } from 'react-icons/bi';
 import { FaCodepen } from 'react-icons/fa';
 import { HiDocumentText } from 'react-icons/hi';
 import personal_photos2 from '../../images/personal/personal-photos-2.jpg';
+import Modal from '../../components/common/Modal';
 
 const HomePersonalInfoSection = () => {
     const list = [
