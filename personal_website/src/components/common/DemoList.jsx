@@ -21,20 +21,12 @@ const DemoList = ({ demoTitle, demoData, frontEndTechList, backEndTechList, hand
                                       >
                                           {item.text}
                                       </button>
-                                  ) : (
-                                      <Link
-                                          to={item.path}
-                                          onClick={(e) => {
-                                              //   如果連結設置 false 則不觸發開啟頁面功能
-                                              if (!item.path) {
-                                                  e.preventDefault();
-                                              }
-                                          }}
-                                          target='_block'
-                                          className='text-decoration-none'
-                                      >
+                                  ) : item.path ? (
+                                      <Link to={item.path} target='_block' className={`text-decoration-none`}>
                                           {item.text}
                                       </Link>
+                                  ) : (
+                                      <span className='text-dark'> {item.text}</span>
                                   )}
                               </span>
                           </li>

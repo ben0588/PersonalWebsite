@@ -31,7 +31,12 @@ const LayoutSwiper = ({ listData }) => {
                 {listData.map((item, index) => {
                     return (
                         <SwiperSlide key={index} className='mySwiper'>
-                            <img src={item.img} className='swiper-demo-img' alt={item.alt} />
+                            <img
+                                src={item.img}
+                                className='swiper-demo-img'
+                                alt={item.alt}
+                                style={{ maxHeight: `300px` }}
+                            />
                         </SwiperSlide>
                     );
                 })}
