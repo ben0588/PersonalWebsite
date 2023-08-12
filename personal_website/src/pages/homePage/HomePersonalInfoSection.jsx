@@ -5,7 +5,7 @@ import { FaCodepen } from 'react-icons/fa';
 import { HiDocumentText } from 'react-icons/hi';
 import personal_photos2 from '../../images/personal/personal-photos-2.jpg';
 import Modal from '../../components/common/Modal';
-
+import { motion } from 'framer-motion';
 const HomePersonalInfoSection = () => {
     const list = [
         { title: 'Github', path: 'https://github.com/ben0588', icon: <BsGithub /> },
@@ -24,7 +24,11 @@ const HomePersonalInfoSection = () => {
                 張勝翔 <span className='text-secondary fs-3'>Ben</span>
             </h2>
             <div className='d-flex justify-content-center align-items-center flex-column flex-sm-row col col-sm-6 mx-auto'>
-                <ul className='list-unstyled me-3'>
+                <motion.ul
+                    className='list-unstyled me-3'
+                    initial={{ x: -100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                >
                     {list.map((item, index) => (
                         <li key={index}>
                             <Link
@@ -38,10 +42,10 @@ const HomePersonalInfoSection = () => {
                             </Link>
                         </li>
                     ))}
-                </ul>
-                <p className='border p-3 '>
-                    Hi，我叫張勝翔(Ben)，南投人現居台中，個性慢熱，MBTI人格：INFJ，過去從事客服相關工作，2022年轉職挑戰前端工程師，歷經政府實體課程及持續自學，期許成為更好的人
-                </p>
+                </motion.ul>
+                <motion.p className='border p-3 ' initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}>
+                    Hi，我叫張勝翔(Ben)，南投人現居台中，個性慢熱，MBTI人格：INFJ，過去從事客服相關工作，2022年轉職挑戰前端工程師，歷經政府實體課程及持續自學。
+                </motion.p>
             </div>
         </div>
     );

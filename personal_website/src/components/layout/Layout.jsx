@@ -22,7 +22,6 @@ const Layout = () => {
 
     // 處理回到首頁滑動效果
     const handlerGoTop = () => {
-        console.log('觸發');
         window.scrollTo({
             top: 0,
             behavior: 'smooth', // 移動效果

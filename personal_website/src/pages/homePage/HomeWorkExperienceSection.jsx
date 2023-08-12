@@ -1,3 +1,4 @@
+import FramerMotion from '../../components/common/FramerMotion';
 import List from '../../components/common/List';
 
 const HomeWorkExperienceSection = () => {
@@ -57,24 +58,29 @@ const HomeWorkExperienceSection = () => {
     return (
         <div className='mt-5 mt-sm-5 '>
             <h3 className='fw-bolder mb-3'>
-                工作經歷<span className='text-primary fs-4 ms-2'>Work Experience</span>
+                <FramerMotion>
+                    工作經歷<span className='text-primary fs-4 ms-2'>Work Experience</span>
+                </FramerMotion>
             </h3>
             <div>
                 {workExperienceList.map((item, index) => (
                     <div key={index} className='border-top border-2'>
-                        <div className='d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-3 mb-1 '>
-                            <h5 className='d-inline-block fw-bolder mb-0 me-2'>{item.company}</h5>
-                            <span className='fw-bolder fs-6 me-2'> | {item.position} </span>
-                            <small className='text-muted'>
-                                {item.during} {item.duringSum}
-                            </small>
-                        </div>
-
-                        <ul className='mb-4'>
-                            {item.dataList.map((items, i) => (
-                                <li key={i}>{items.text}</li>
-                            ))}
-                        </ul>
+                        <FramerMotion>
+                            <div className='d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-3 mb-1 '>
+                                <h5 className='d-inline-block fw-bolder mb-0 me-2'>{item.company}</h5>
+                                <span className='fw-bolder fs-6 me-2'> | {item.position} </span>
+                                <small className='text-muted'>
+                                    {item.during} {item.duringSum}
+                                </small>
+                            </div>
+                        </FramerMotion>
+                        <FramerMotion>
+                            <ul className='mb-4'>
+                                {item.dataList.map((items, i) => (
+                                    <li key={i}>{items.text}</li>
+                                ))}
+                            </ul>
+                        </FramerMotion>
                     </div>
                 ))}
             </div>

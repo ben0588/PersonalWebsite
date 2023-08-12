@@ -1,14 +1,14 @@
+import FramerMotion from '../../components/common/FramerMotion';
 import List from '../../components/common/List';
 
 const HomeSkillSection = () => {
     const reactSkillList = [
-        { text: '使用 function Hook 架構開發' },
-        { text: '使用 create-react-app 開發專案' },
-        { text: '使用 react-layout 設置網站佈局' },
-        { text: '使用 react-router-dom 管理路由與身分驗證' },
-        { text: '使用 useContext & useReducer 管理全站狀態' },
+        { text: '使用 Function Hook 架構開發' },
+        { text: '使用 Vite、CRA 開發 React 專案' },
+        { text: '使用 React-Router-Dom 管理路由與身分驗證' },
+        { text: '使用 useContext & useReducer 管理全站資料狀態' },
+        { text: '使用 Redux-toolkit 管理全站資料狀態' },
         { text: '使用 react-hook-form 管理與驗證表單資料' },
-        { text: '使用 styled-components - CSS in Js 管理元件樣式' },
     ];
 
     const javaScriptSkillList = [
@@ -16,7 +16,6 @@ const HomeSkillSection = () => {
         { text: '透過 AJAX 做 API 資料串接' },
         { text: '處理非同步 Promise、async/await' },
         { text: '使用 Axios 套件呼叫 API 取得資料' },
-        { text: '使用 Aos 套件設置視差滾動' },
     ];
 
     const nodeSkillList = [
@@ -34,45 +33,58 @@ const HomeSkillSection = () => {
         { text: '使用 SCSS  開發網站樣式管理' },
         { text: '了解 SMACSS / OOCSS 開發設計模式' },
         { text: '具備 Bootstrap 5 使用經驗' },
-        { text: '使用 Prettier 優化 Coding Style' },
-        { text: '使用 Postman 測試 API' },
-        { text: '部屬 GitHub Pages 靜態網頁' },
     ];
     return (
         <div className='mt-4 mt-sm-5'>
-            <h3 className='fw-bolder'>
-                技能<span className='text-primary fs-4 ms-2'>Skill</span>
-            </h3>
+            <FramerMotion>
+                <h3 className='fw-bolder'>
+                    技能<span className='text-primary fs-4 ms-2'>Skill</span>
+                </h3>
+            </FramerMotion>
             <div className='row'>
                 <div className='col-12 col-sm-6 '>
-                    <List
-                        listTitle='React.js'
-                        listData={reactSkillList}
-                        border={true}
-                        margin={'mb-3'}
-                        padding={'py-2'}
-                    />
+                    <FramerMotion>
+                        <List
+                            listTitle='React.js'
+                            listData={reactSkillList}
+                            border={true}
+                            margin={'mb-3'}
+                            padding={'py-2'}
+                        />
+                    </FramerMotion>
                 </div>
                 <div className='col-12 col-sm-6'>
-                    <List
-                        listTitle='JavaScript'
-                        listData={javaScriptSkillList}
-                        border={true}
-                        margin={'mb-3'}
-                        padding={'py-2'}
-                    />
+                    <FramerMotion>
+                        <List
+                            listTitle='JavaScript'
+                            listData={javaScriptSkillList}
+                            border={true}
+                            margin={'mb-3'}
+                            padding={'py-2'}
+                        />
+                    </FramerMotion>
                 </div>
                 <div className='col-12 col-sm-6'>
-                    <List listTitle='Node.js' listData={nodeSkillList} border={true} margin={'mb-3'} padding={'py-2'} />
+                    <FramerMotion>
+                        <List
+                            listTitle='Node.js'
+                            listData={nodeSkillList}
+                            border={true}
+                            margin={'mb-3'}
+                            padding={'py-2'}
+                        />
+                    </FramerMotion>
                 </div>
                 <div className='col-12 col-sm-6'>
-                    <List
-                        listTitle='Web Layout'
-                        listData={webLayoutSkillList}
-                        border={true}
-                        margin={'mb-3'}
-                        padding={'py-2'}
-                    />
+                    <FramerMotion>
+                        <List
+                            listTitle='Web Layout'
+                            listData={webLayoutSkillList}
+                            border={true}
+                            margin={'mb-3'}
+                            padding={'py-2'}
+                        />
+                    </FramerMotion>
                 </div>
             </div>
         </div>

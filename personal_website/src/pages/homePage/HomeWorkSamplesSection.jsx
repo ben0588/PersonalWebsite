@@ -38,6 +38,7 @@ import demo4_Img7 from '../../images/demo4/demo4-7.webp';
 // 其他元件
 import BounceVideo from '../../components/common/BounceVideo';
 import DemoList from '../../components/common/DemoList';
+import FramerMotion from '../../components/common/FramerMotion';
 
 const HomeWorkSamplesSection = () => {
     const [isModalOpen, setIsModalOpen] = useState(false); // 管理彈跳視窗
@@ -198,62 +199,76 @@ const HomeWorkSamplesSection = () => {
                 />
             ) : null}
 
-            <h3 className='fw-bolder mb-4'>
-                作品集<span className='text-primary fs-4 ms-2'>Work samples</span>
-            </h3>
+            <FramerMotion>
+                <h3 className='fw-bolder mb-4'>
+                    作品集<span className='text-primary fs-4 ms-2'>Work samples</span>
+                </h3>
+            </FramerMotion>
             <div className='row m-0 '>
-                <div className='col-12'>
+                <div className='col-12 mt-3'>
                     <div className='row border border-2'>
                         <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
-                            <LayoutSwiper listData={demo5ImgList} />
+                            <FramerMotion>
+                                <LayoutSwiper listData={demo5ImgList} />
+                            </FramerMotion>
                         </div>
                         <div className='col-12 col-sm-7 '>
-                            <DemoList
-                                demoTitle={'新作品製作中'}
-                                demoData={demo5LinkList}
-                                handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
-                                frontEndTechList={false}
-                                backEndTechList={false}
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div className='col-12'>
-                    <div className='row border border-2'>
-                        <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
-                            <LayoutSwiper listData={demo4ImgList} />
-                        </div>
-                        <div className='col-12 col-sm-7 '>
-                            <DemoList
-                                demoTitle={'記錄色碼'}
-                                demoData={demo4LinkList}
-                                handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
-                                frontEndTechList={demo4FrontEndTechList}
-                                backEndTechList={false}
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div className='col-12'>
-                    <div className='row border border-2'>
-                        <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
-                            <LayoutSwiper listData={demo1ImgList} />
-                        </div>
-                        <div className='col-12 col-sm-7 '>
-                            <DemoList
-                                demoTitle={'源點。線上網球購物中心'}
-                                demoData={demo1LinkList}
-                                handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
-                                frontEndTechList={demo1FrontEndTechList}
-                                backEndTechList={demo1BackEndTechList}
-                            />
+                            <FramerMotion>
+                                <DemoList
+                                    demoTitle={'新作品製作中'}
+                                    demoData={demo5LinkList}
+                                    handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
+                                    frontEndTechList={false}
+                                    backEndTechList={false}
+                                />
+                            </FramerMotion>
                         </div>
                     </div>
                 </div>
 
                 <div className='col-12 mt-3'>
+                    <div className='row border border-2'>
+                        <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
+                            <FramerMotion>
+                                <LayoutSwiper listData={demo4ImgList} />
+                            </FramerMotion>
+                        </div>
+                        <div className='col-12 col-sm-7 '>
+                            <FramerMotion>
+                                <DemoList
+                                    demoTitle={'記錄色碼'}
+                                    demoData={demo4LinkList}
+                                    handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
+                                    frontEndTechList={demo4FrontEndTechList}
+                                    backEndTechList={false}
+                                />
+                            </FramerMotion>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='col-12 mt-3'>
+                    <div className='row border border-2'>
+                        <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
+                            <FramerMotion>
+                                <LayoutSwiper listData={demo1ImgList} />
+                            </FramerMotion>
+                        </div>
+                        <div className='col-12 col-sm-7 '>
+                            <FramerMotion>
+                                <DemoList
+                                    demoTitle={'源點。線上網球購物中心'}
+                                    demoData={demo1LinkList}
+                                    handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
+                                    frontEndTechList={demo1FrontEndTechList}
+                                    backEndTechList={demo1BackEndTechList}
+                                />
+                            </FramerMotion>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div className='col-12 mt-3'>
                     <div className='row border border-2'>
                         <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
                             <LayoutSwiper listData={demo2ImgList} />
@@ -268,21 +283,25 @@ const HomeWorkSamplesSection = () => {
                             />
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='col-12 mt-3'>
                     <div className='row border border-2'>
                         <div className='col-12 col-sm-5  border-end border-2 mt-2 mt-sm-0 '>
-                            <LayoutSwiper listData={demo3ImgList} />
+                            <FramerMotion>
+                                <LayoutSwiper listData={demo3ImgList} />
+                            </FramerMotion>
                         </div>
                         <div className='col-12 col-sm-7 '>
-                            <DemoList
-                                demoTitle={'Spost+ 運動整合平台'}
-                                demoData={demo3LinkList}
-                                handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
-                                frontEndTechList={demo3FrontEndTechList}
-                                backEndTechList={demo3BackEndTechList}
-                            />
+                            <FramerMotion>
+                                <DemoList
+                                    demoTitle={'Spost+ 運動整合平台'}
+                                    demoData={demo3LinkList}
+                                    handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
+                                    frontEndTechList={demo3FrontEndTechList}
+                                    backEndTechList={demo3BackEndTechList}
+                                />
+                            </FramerMotion>
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,5 @@
+import FramerMotion from '../../components/common/FramerMotion';
+
 const HomeBiographySection = () => {
     const biographyTitleList = [
         { id: 1, title: '【 關於我 】' },
@@ -28,24 +30,28 @@ const HomeBiographySection = () => {
 
     return (
         <div className='mt-3 mt-sm-5'>
-            <h3 className='fw-bolder mb-3'>
-                自傳<span className='text-primary fs-4 ms-2'>Biography</span>
-            </h3>
+            <FramerMotion>
+                <h3 className='fw-bolder mb-3'>
+                    自傳<span className='text-primary fs-4 ms-2'>Biography</span>
+                </h3>
+            </FramerMotion>
             <div className='w-100 border border-2 p-3'>
-                {biographyTitleList.map((items, index) => (
-                    <p key={index} className='mt-2'>
-                        {biographyTextList.map((item, i) => (
-                            <span key={i}>
-                                {items.id === item.id ? (
-                                    <>
-                                        <span className='d-block mb-1'>{items.title}</span>
-                                        <span>{item.text}</span>
-                                    </>
-                                ) : null}
-                            </span>
-                        ))}
-                    </p>
-                ))}
+                <FramerMotion>
+                    {biographyTitleList.map((items, index) => (
+                        <p key={index} className='mt-2'>
+                            {biographyTextList.map((item, i) => (
+                                <span key={i}>
+                                    {items.id === item.id ? (
+                                        <>
+                                            <span className='d-block mb-1'>{items.title}</span>
+                                            <span>{item.text}</span>
+                                        </>
+                                    ) : null}
+                                </span>
+                            ))}
+                        </p>
+                    ))}
+                </FramerMotion>
             </div>
         </div>
     );
