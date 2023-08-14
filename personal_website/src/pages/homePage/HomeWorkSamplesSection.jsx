@@ -35,6 +35,20 @@ import demo4_Img5 from '../../images/demo4/demo4-5.webp';
 import demo4_Img6 from '../../images/demo4/demo4-6.webp';
 import demo4_Img7 from '../../images/demo4/demo4-7.webp';
 
+// demo5 start
+import demo5_Img1 from '../../images/demo5/demo5-1.webp';
+import demo5_Img2 from '../../images/demo5/demo5-2.webp';
+import demo5_Img3 from '../../images/demo5/demo5-3.webp';
+import demo5_Img4 from '../../images/demo5/demo5-4.webp';
+import demo5_Img5 from '../../images/demo5/demo5-5.webp';
+import demo5_Img6 from '../../images/demo5/demo5-6.webp';
+import demo5_Img7 from '../../images/demo5/demo5-7.webp';
+import demo5_Img8 from '../../images/demo5/demo5-8.webp';
+import demo5_Img9 from '../../images/demo5/demo5-9.webp';
+import demo5_Img10 from '../../images/demo5/demo5-10.webp';
+import demo5_Img11 from '../../images/demo5/demo5-11.webp';
+import demo5_Img12 from '../../images/demo5/demo5-12.webp';
+
 // 其他元件
 import BounceVideo from '../../components/common/BounceVideo';
 import DemoList from '../../components/common/DemoList';
@@ -62,8 +76,8 @@ const HomeWorkSamplesSection = () => {
             text: '本站觀看',
             videoPath: demo1_Mp41,
         },
-        // { title: '前端 GitHub 連結：', path: 'https://github.com/ben0588/shopping_site/tree/main', text: '跨站觀看' },
-        // { title: '後端 GitHub 連結', path: 'https://github.com/ben0588/node_shopping_site', text: '跨站觀看' },
+        { title: '前端 GitHub 連結：', path: 'https://github.com/ben0588/shopping_site/tree/main', text: '跨站觀看' },
+        { title: '後端 GitHub 連結', path: 'https://github.com/ben0588/node_shopping_site', text: '跨站觀看' },
         {
             title: 'Swagger UI 展示 API 文件：',
             path: 'https://www.awesomescreenshot.com/video/16523212?key=124967b030a390339c2130f7b9627996',
@@ -76,12 +90,9 @@ const HomeWorkSamplesSection = () => {
         { text: '使用 create-react-app 開發專案' },
         { text: '使用 react-hook-form 管理與驗證表單資料' },
         { text: '使用 useContext & useReducer 狀態管理' },
-        { text: '- 登入狀態、購物車 CRUD、願望清單 CRUD' },
         { text: '使用 axios 串接後端 api 資料' },
-        { text: '- 會員系統 CRUD、第三方登入 ( Facebook/Google/Line/Github )' },
-        { text: '使用 SCSS 管理 RWD 響應式範圍' },
-        { text: '- ( 1140px、768px、568px、414px、375px、320px )' },
-        { text: '使用 styled-components - CSS in Js 管理元件樣式' },
+        { text: '使用支持第三方登入 ( Facebook/Google/Line/Github )' },
+        { text: '使用 SCSS 手刻 RWD 響應式 1140~320px' },
     ];
     const demo1BackEndTechList = [
         { text: '使用 Node/express 建立 Web Server 應用' },
@@ -90,8 +101,15 @@ const HomeWorkSamplesSection = () => {
         { text: '使用 MySQL 連接資料庫操作 CRUD' },
         { text: '使用 swagger-ui-express 產生線上 API 文件' },
     ];
+    const demo1FunctionDescription = [
+        { text: '使用者可使用官網註冊或者第三方登入' },
+        { text: '使用者登入之後可以編輯個人資料與刪除帳戶存在' },
+        { text: '使用者可使用忘記密碼功能' },
+        { text: '使用者可使用新增商品至購物車，且可編輯購物車數量與刪除商品' },
+        { text: '使用者可使用新增商品至願望清單，且可編輯願望清單與刪除商品' },
+    ];
 
-    // demo2 作品開始：
+    // demo2 (todoList) 作品開始：
     const demo2ImgList = [
         { img: demo2_Img1, alt: 'demo2展示' },
         { img: demo2_Img2, alt: 'demo2展示' },
@@ -109,7 +127,7 @@ const HomeWorkSamplesSection = () => {
         { text: '使用 axios 套件串接整合 api 完成 CRUD 操作' },
     ];
 
-    // demo3 作品開始：
+    // demo3 (資策會作品) 作品開始：
     const demo3ImgList = [
         { img: demo3_Img1, alt: 'demo3展示' },
         { img: demo3_Img2, alt: 'demo3展示' },
@@ -119,7 +137,7 @@ const HomeWorkSamplesSection = () => {
         { img: demo3_Img6, alt: 'demo3展示' },
     ];
     const demo3LinkList = [
-        { title: '作品 DEMO 連結：', text: '本站觀看', videoPath: demo3_Mp41 },
+        { title: '作品連結：', text: '本站觀看', videoPath: demo3_Mp41 },
         { title: '備註：', text: '本作品五人協力，僅負責首頁+購物車+金流', path: false },
     ];
     const demo3FrontEndTechList = [
@@ -133,7 +151,7 @@ const HomeWorkSamplesSection = () => {
         { text: '使用 PHP 串接 綠界金流 ECPay 完成付款測試' },
     ];
 
-    // demo4 作品開始：
+    // demo4 (色碼紀錄) 作品開始：
     const demo4ImgList = [
         { img: demo4_Img1, alt: 'demo4展示' },
         { img: demo4_Img2, alt: 'demo4展示' },
@@ -143,44 +161,78 @@ const HomeWorkSamplesSection = () => {
         { img: demo4_Img6, alt: 'demo4展示' },
     ];
     const demo4LinkList = [
-        { title: '作品 DEMO 連結：', path: 'https://ben0588.github.io/ColorsReference/', text: '跨站觀看' },
-        { title: '主要功能：', text: '依照設定好的色碼，滑鼠移入按左鍵直接複製代碼', path: false },
-        { title: '設定色碼：', text: '「新增」、「編輯」、「刪除單一」、「刪除全部」色碼組合。', path: false },
-        { title: '注意：', text: '頁面重新整理不會丟失紀錄，但更換裝置會遺失紀錄！', path: false },
+        { title: '作品連結：', path: 'https://ben0588.github.io/ColorsReference/', text: '跨站觀看' },
+        { title: 'GitHub連結：', path: 'https://github.com/ben0588/ColorsReference/', text: '跨站觀看' },
     ];
     const demo4FrontEndTechList = [
         { text: '使用 Vite/React 開發專案。' },
         { text: '使用 Redux-toolkit 完成全域狀態管理。' },
-        { text: '使用 Redux-persist 完成資料本地端( LocalStorage ) 自動儲存與刪除。' },
+        { text: '使用 Redux-persist 完成資料本地端自動儲存與刪除。' },
         { text: '使用 Bootstrap5 進行開發樣式' },
         { text: '使用 react-bootstrap 模組開發' },
     ];
+    const demo4FunctionDescription = [
+        { text: '使用者可新增一組五個色碼設定' },
+        { text: '色碼設定完畢之後會依照顏色區塊顯示' },
+        { text: '支持滑鼠左鍵點擊後複製顏色代碼' },
+        { text: '使用者可新增編輯刪除色碼之設定' },
+        { text: '支持頁面重新整理不會丟失紀錄，但更換裝置會遺失紀錄' },
+    ];
 
-    // demo5 作品開始：
-    // const demo5ImgList = [
-    //     { img: demo5_Img1, alt: 'demo5展示' },
-    //     { img: demo5_Img2, alt: 'demo5展示' },
-    //     { img: demo5_Img3, alt: 'demo5展示' },
-    //     { img: demo5_Img5, alt: 'demo5展示' },
-    //     { img: demo5_Img5, alt: 'demo5展示' },
-    //     { img: demo5_Img6, alt: 'demo5展示' },
-    // ];
+    // demo5 (香水電商網站) 作品開始：
     const demo5ImgList = [
-        {
-            img: 'https://images.unsplash.com/photo-1590736704728-f4730bb30770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyZnVtZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60',
-            alt: 'demo5展示',
-        },
-        {
-            img: 'https://images.unsplash.com/photo-1545840716-c82e9eec6930?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGVyZnVtZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60',
-            alt: 'demo5展示',
-        },
+        { img: demo5_Img1, alt: 'demo5展示' },
+        { img: demo5_Img2, alt: 'demo5展示' },
+        { img: demo5_Img3, alt: 'demo5展示' },
+        { img: demo5_Img4, alt: 'demo5展示' },
+        { img: demo5_Img5, alt: 'demo5展示' },
+        { img: demo5_Img6, alt: 'demo5展示' },
+        { img: demo5_Img7, alt: 'demo5展示' },
+        { img: demo5_Img8, alt: 'demo5展示' },
+        { img: demo5_Img9, alt: 'demo5展示' },
+        { img: demo5_Img10, alt: 'demo5展示' },
+        { img: demo5_Img11, alt: 'demo5展示' },
+        { img: demo5_Img12, alt: 'demo5展示' },
     ];
 
     const demo5LinkList = [
-        // { title: '作品 DEMO 連結：', path: 'https://ben0588.github.io/ColorsReference/', text: '跨站觀看' },
-        // { title: '主要功能：', text: '依照設定好的色碼，滑鼠移入按左鍵直接複製代碼', path: false },
-        { title: '作品製作中', text: '...待完成', path: false },
+        { title: '作品連結：', path: 'https://ben0588.github.io/react-fragrance-dawn/#/', text: '跨站觀看' },
+        { title: 'GitHub連結：', path: 'https://github.com/ben0588/react-fragrance-dawn', text: '跨站觀看' },
     ];
+
+    const demo5FrontEndTechList = [
+        { text: '使用 Vite / React 開發專案' },
+        { text: '使用 React-Router-Dom 設置路由 Router ' },
+        { text: '使用 Redux-toolkit 完成全域狀態管理' },
+        { text: '使用 Redux-persist 完成資料本地端自動儲存與刪除' },
+        { text: '使用 Axios 透過 AJAX 呼叫後端 API 取得 JSON 資料' },
+        { text: '使用 Bootstrap5 進行開發樣式，且支持 RWD 響應式' },
+        { text: '使用 SCSS 完成部分客製化 CSS 樣式' },
+        { text: '使用 React-Bootstrap 模組開發' },
+        { text: '使用 Framer-Motion 完成視差滾動效果' },
+    ];
+    const demo5FunctionDescription = [
+        { text: '使用者可在首頁中使用眾多功能' },
+        { text: '使用者可在商品列表中使用類別、關鍵字搜尋，支持商品排序' },
+        { text: '使用者可將心儀商品加入追蹤清單，並支持刪除功能' },
+        { text: '使用者可將心儀商品加入購物車，並支持編輯商品數量與刪除' },
+        { text: '使用者可輸入活動提供的優惠碼，結帳時後輸入並獲得現金折扣' },
+        { text: '使用者填寫付款資訊後將建立訂單，並可選擇付款方式，完成購買' },
+        { text: '使用者付款與未付款訂單資訊，可隨時追蹤訂單進度' },
+        { text: '使用者可設定首頁是否接收通知訊息，以便收到關於促銷等活動通知' },
+        { text: '使用者可前往文章專欄查看近期優質文章' },
+        { text: '使用者可前往優惠頁查看近期舉辦活動資訊' },
+        { text: '管理者可登入或登入後台' },
+        { text: '管理者可使用後台管理商品資訊，並依照產品類別進行搜尋' },
+        { text: '管理者可新增、編輯、刪除商品資訊，並且前台商品資訊也一併更動' },
+        { text: '管理者可使用後台管理優惠卷資訊' },
+        { text: '管理者可新增、編輯、刪除優惠卷資訊，並且前台優惠碼資訊也一併更動' },
+        { text: '管理者可使用後台管理訂單資訊' },
+        { text: '管理者可編輯訂單資訊，並且前台訂單資訊也一併更動' },
+        { text: '管理者可使用後台管理文章資訊' },
+        { text: '管理者可新增、編輯、刪除文章資訊，並且前台文章資訊也一併更動' },
+    ];
+    const demo5BackEndTechList = false;
 
     // 依照點選路徑不同而開啟彈跳畫面
     const handleClickVideo = (videoPath) => {
@@ -204,9 +256,9 @@ const HomeWorkSamplesSection = () => {
                     作品集<span className='text-primary fs-4 ms-2'>Work samples</span>
                 </h3>
             </FramerMotion>
-            <div className='row m-0 '>
+            <div className='row  align-items-center m-0 '>
                 <div className='col-12 mt-3'>
-                    <div className='row border border-2'>
+                    <div className='row align-items-center border border-2'>
                         <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
                             <FramerMotion>
                                 <LayoutSwiper listData={demo5ImgList} />
@@ -215,19 +267,20 @@ const HomeWorkSamplesSection = () => {
                         <div className='col-12 col-sm-7 '>
                             <FramerMotion>
                                 <DemoList
-                                    demoTitle={'新作品製作中'}
+                                    demoTitle={'香氛晨光'}
                                     demoData={demo5LinkList}
                                     handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
-                                    frontEndTechList={false}
-                                    backEndTechList={false}
+                                    frontEndTechList={demo5FrontEndTechList}
+                                    backEndTechList={demo5BackEndTechList}
+                                    description={demo5FunctionDescription}
                                 />
                             </FramerMotion>
                         </div>
                     </div>
                 </div>
 
-                <div className='col-12 mt-3'>
-                    <div className='row border border-2'>
+                <div className='col-12  mt-3'>
+                    <div className='row align-items-center border border-2'>
                         <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
                             <FramerMotion>
                                 <LayoutSwiper listData={demo4ImgList} />
@@ -241,6 +294,7 @@ const HomeWorkSamplesSection = () => {
                                     handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
                                     frontEndTechList={demo4FrontEndTechList}
                                     backEndTechList={false}
+                                    description={demo4FunctionDescription}
                                 />
                             </FramerMotion>
                         </div>
@@ -248,8 +302,8 @@ const HomeWorkSamplesSection = () => {
                 </div>
 
                 <div className='col-12 mt-3'>
-                    <div className='row border border-2'>
-                        <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
+                    <div className='row align-items-center border border-2'>
+                        <div className='col-12 col-sm-5 border-end border- mt-2 mt-sm-02 '>
                             <FramerMotion>
                                 <LayoutSwiper listData={demo1ImgList} />
                             </FramerMotion>
@@ -262,6 +316,7 @@ const HomeWorkSamplesSection = () => {
                                     handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
                                     frontEndTechList={demo1FrontEndTechList}
                                     backEndTechList={demo1BackEndTechList}
+                                    description={demo1FunctionDescription}
                                 />
                             </FramerMotion>
                         </div>
@@ -286,7 +341,7 @@ const HomeWorkSamplesSection = () => {
                 </div> */}
 
                 <div className='col-12 mt-3'>
-                    <div className='row border border-2'>
+                    <div className='row  align-items-center border border-2'>
                         <div className='col-12 col-sm-5  border-end border-2 mt-2 mt-sm-0 '>
                             <FramerMotion>
                                 <LayoutSwiper listData={demo3ImgList} />

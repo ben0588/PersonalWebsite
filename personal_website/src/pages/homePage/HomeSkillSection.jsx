@@ -8,7 +8,7 @@ const HomeSkillSection = () => {
         { text: '使用 React-Router-Dom 管理路由與身分驗證' },
         { text: '使用 useContext & useReducer 管理全站資料狀態' },
         { text: '使用 Redux-toolkit 管理全站資料狀態' },
-        { text: '使用 react-hook-form 管理與驗證表單資料' },
+        { text: '使用 React-Hook-Form 管理與驗證表單資料' },
     ];
 
     const javaScriptSkillList = [
@@ -33,7 +33,9 @@ const HomeSkillSection = () => {
         { text: '使用 SCSS  開發網站樣式管理' },
         { text: '了解 SMACSS / OOCSS 開發設計模式' },
         { text: '具備 Bootstrap 5 使用經驗' },
+        { text: '使用 Git 版本控制' },
     ];
+
     return (
         <div className='mt-4 mt-sm-5'>
             <FramerMotion>

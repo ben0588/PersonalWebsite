@@ -7,7 +7,7 @@ import 'swiper/css/scrollbar';
 
 const LayoutSwiper = ({ listData }) => {
     return (
-        <>
+        <div className='h-100'>
             <Swiper
                 // 更改兩側箭頭顏色 + 底部分頁顏色
                 style={{
@@ -27,21 +27,22 @@ const LayoutSwiper = ({ listData }) => {
                 slidesPerView={1} // 起始可以看到幾張
                 spaceBetween={20} // 每塊間隔
                 className='mySwiper' // 內外都要加上 flex 效果讓內層 img 垂直置中
+                // injectStyles={{ height: `500px` }}
             >
                 {listData.map((item, index) => {
                     return (
-                        <SwiperSlide key={index} className='mySwiper'>
+                        <SwiperSlide key={index} className='mySwiper '>
                             <img
                                 src={item.img}
-                                className='swiper-demo-img'
+                                className='swiper-demo-img '
                                 alt={item.alt}
-                                style={{ maxHeight: `300px` }}
+                                // style={{ height: `500px` }}
                             />
                         </SwiperSlide>
                     );
                 })}
             </Swiper>
-        </>
+        </div>
     );
 };
 export default LayoutSwiper;
