@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PersonalWebsite/static/css/main.17cd8775.css",
-    "main.js": "/PersonalWebsite/static/js/main.a7825dc7.js",
+    "main.js": "/PersonalWebsite/static/js/main.c9484ce6.js",
     "static/media/demo1-api.mp4": "/PersonalWebsite/static/media/demo1-api.233af31c5f63a32f5955.mp4",
     "static/media/demo1-user.mp4": "/PersonalWebsite/static/media/demo1-user.5ededf88114b93d59738.mp4",
     "static/media/demo3.mp4": "/PersonalWebsite/static/media/demo3.b72bfa724066cb9bbaa9.mp4",
@@ -39,16 +39,23 @@
     "static/media/demo4-4.webp": "/PersonalWebsite/static/media/demo4-4.cbcddf5c5d4058161b4d.webp",
     "static/media/demo2-1.webp": "/PersonalWebsite/static/media/demo2-1.52b99ee003b7ca3b0622.webp",
     "static/media/demo3-5.webp": "/PersonalWebsite/static/media/demo3-5.4f9884d6a760d328004c.webp",
+    "static/media/demo6-5.webp": "/PersonalWebsite/static/media/demo6-5.fc696c52d3b12bd014d3.webp",
+    "static/media/demo6-4.webp": "/PersonalWebsite/static/media/demo6-4.f90b2925d3ddf01967d4.webp",
+    "static/media/demo6-6.webp": "/PersonalWebsite/static/media/demo6-6.fa9075ede758042a463e.webp",
+    "static/media/demo6-2.webp": "/PersonalWebsite/static/media/demo6-2.0f0cf2bebfce1e033b6a.webp",
+    "static/media/demo6-7.webp": "/PersonalWebsite/static/media/demo6-7.87518e6c49d875bf96ae.webp",
     "static/media/demo4-2.webp": "/PersonalWebsite/static/media/demo4-2.ef8a010a421944a955bc.webp",
+    "static/media/demo6-1.webp": "/PersonalWebsite/static/media/demo6-1.277c3d0e5877b3068683.webp",
+    "static/media/demo6-3.webp": "/PersonalWebsite/static/media/demo6-3.5ecfcccfbc5837a7b727.webp",
     "static/media/demo2-3.webp": "/PersonalWebsite/static/media/demo2-3.95b7cc74f4a75460babf.webp",
     "static/media/demo2-5.webp": "/PersonalWebsite/static/media/demo2-5.fd9674b43c3bfc7c78c0.webp",
     "static/media/demo2-4.webp": "/PersonalWebsite/static/media/demo2-4.3435cd771e036008f0c0.webp",
     "index.html": "/PersonalWebsite/index.html",
     "main.17cd8775.css.map": "/PersonalWebsite/static/css/main.17cd8775.css.map",
-    "main.a7825dc7.js.map": "/PersonalWebsite/static/js/main.a7825dc7.js.map"
+    "main.c9484ce6.js.map": "/PersonalWebsite/static/js/main.c9484ce6.js.map"
   },
   "entrypoints": [
     "static/css/main.17cd8775.css",
-    "static/js/main.a7825dc7.js"
+    "static/js/main.c9484ce6.js"
   ]
 }
