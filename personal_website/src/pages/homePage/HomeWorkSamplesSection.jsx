@@ -49,6 +49,15 @@ import demo5_Img10 from '../../images/demo5/demo5-10.webp';
 import demo5_Img11 from '../../images/demo5/demo5-11.webp';
 import demo5_Img12 from '../../images/demo5/demo5-12.webp';
 
+// demo6 start
+import demo6_Img1 from '../../images/demo6/demo6-1.webp';
+import demo6_Img2 from '../../images/demo6/demo6-2.webp';
+import demo6_Img3 from '../../images/demo6/demo6-3.webp';
+import demo6_Img4 from '../../images/demo6/demo6-4.webp';
+import demo6_Img5 from '../../images/demo6/demo6-5.webp';
+import demo6_Img6 from '../../images/demo6/demo6-6.webp';
+import demo6_Img7 from '../../images/demo6/demo6-7.webp';
+
 // 其他元件
 import BounceVideo from '../../components/common/BounceVideo';
 import DemoList from '../../components/common/DemoList';
@@ -234,6 +243,41 @@ const HomeWorkSamplesSection = () => {
     ];
     const demo5BackEndTechList = false;
 
+    // demo6 (todolist待辦清單) 作品開始：
+
+    const demo6ImgList = [
+        { img: demo6_Img1, alt: 'demo6展示' },
+        { img: demo6_Img2, alt: 'demo6展示' },
+        { img: demo6_Img3, alt: 'demo6展示' },
+        { img: demo6_Img4, alt: 'demo6展示' },
+        { img: demo6_Img5, alt: 'demo6展示' },
+        { img: demo6_Img6, alt: 'demo6展示' },
+        { img: demo6_Img7, alt: 'demo6展示' },
+    ];
+
+    const demo6LinkList = [
+        { title: '作品連結：', path: 'https://ben0588.github.io/react-todolist/#/', text: '跨站觀看' },
+        { title: 'GitHub連結：', path: 'https://github.com/ben0588/react-todolist', text: '跨站觀看' },
+    ];
+
+    const demo6FrontEndTechList = [
+        { text: '使用 Vite / React 開發專案' },
+        { text: '使用 React-Router-Dom 設置路由 Router ' },
+        { text: '使用 useContext + useReducer 跨元件狀態管理' },
+        { text: '使用 Axios 透過 AJAX 呼叫後端 API 取得 JSON 資料' },
+        { text: '使用 Bootstrap5 進行開發樣式，且支持 RWD 響應式' },
+        { text: '使用 SCSS 完成部分客製化 CSS 樣式' },
+    ];
+    const demo6FunctionDescription = [
+        { text: '使用者可以使用登入與註冊功能(資料會在每日凌晨 1:15 清除)' },
+        { text: '使用者可查看待辦清單列表' },
+        { text: '使用者可依照待完成、已完成篩選清單列表' },
+        { text: '使用者可編輯清單項目內容' },
+        { text: '使用者可更改清單完成狀態' },
+        { text: '使用者可刪除單一清單項目與全部已完成清單內容' },
+    ];
+    const demo6BackEndTechList = false;
+
     // 依照點選路徑不同而開啟彈跳畫面
     const handleClickVideo = (videoPath) => {
         setIsModalOpen(!isModalOpen); // 打開彈跳視窗
@@ -256,7 +300,7 @@ const HomeWorkSamplesSection = () => {
                     作品集<span className='text-primary fs-4 ms-2'>Work samples</span>
                 </h3>
             </FramerMotion>
-            <div className='row  align-items-center m-0 '>
+            <div className='row align-items-center m-0 '>
                 <div className='col-12 mt-3'>
                     <div className='row align-items-center border border-2'>
                         <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
@@ -273,6 +317,28 @@ const HomeWorkSamplesSection = () => {
                                     frontEndTechList={demo5FrontEndTechList}
                                     backEndTechList={demo5BackEndTechList}
                                     description={demo5FunctionDescription}
+                                />
+                            </FramerMotion>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='col-12 mt-3'>
+                    <div className='row align-items-center border border-2'>
+                        <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
+                            <FramerMotion>
+                                <LayoutSwiper listData={demo6ImgList} />
+                            </FramerMotion>
+                        </div>
+                        <div className='col-12 col-sm-7 '>
+                            <FramerMotion>
+                                <DemoList
+                                    demoTitle={'TODO LIST'}
+                                    demoData={demo6LinkList}
+                                    handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
+                                    frontEndTechList={demo6FrontEndTechList}
+                                    backEndTechList={demo6BackEndTechList}
+                                    description={demo6FunctionDescription}
                                 />
                             </FramerMotion>
                         </div>
