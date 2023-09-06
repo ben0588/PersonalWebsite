@@ -34,10 +34,10 @@ const Layout = () => {
     }, [pathname]);
 
     return (
-        <div>
+        <div className=" d-flex flex-column min-vh-100">
             {isScrolling && <GoTopButton onClick={handlerGoTop} />}
             <Header />
-            <main className='container'>
+            <main className="container flex-grow-1">
                 <Outlet />
             </main>
             <Footer />

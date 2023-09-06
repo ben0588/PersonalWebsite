@@ -9,7 +9,10 @@ const HomeBiographySection = () => {
         { id: 5, title: '【 未來規劃 】' },
     ];
     const biographyTextList = [
-        { id: 1, text: '出生於1992年，南投人，天蠍座O型，個性慢熱，興趣聽音樂、影集' },
+        {
+            id: 1,
+            text: '出生於1992年，南投人，天蠍座O型，個性慢熱，興趣聽音樂、影集',
+        },
         {
             id: 2,
             text: '高中就讀夜校半工半讀，大學就讀南開科技大學資管系，參加網球社擔任副社長，大四擔任團隊專題組長，了解溝通協調重要性',
@@ -29,8 +32,8 @@ const HomeBiographySection = () => {
     ];
 
     return (
-        <div className='mt-3 mt-sm-5'>
-            <FramerMotion>
+        <div className="mt-3 mt-sm-5">
+            {/* <FramerMotion>
                 <h3 className='fw-bolder mb-3'>
                     自傳<span className='text-primary fs-4 ms-2'>Biography</span>
                 </h3>
@@ -52,7 +55,7 @@ const HomeBiographySection = () => {
                         </p>
                     ))}
                 </FramerMotion>
-            </div>
+            </div> */}
         </div>
     );
 };

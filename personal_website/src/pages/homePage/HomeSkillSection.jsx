@@ -6,9 +6,11 @@ const HomeSkillSection = () => {
         { text: '使用 Function Hook 架構開發' },
         { text: '使用 Vite、CRA 開發 React 專案' },
         { text: '使用 React-Router-Dom 管理路由與身分驗證' },
-        { text: '使用 useContext & useReducer 管理全站資料狀態' },
-        { text: '使用 Redux-toolkit 管理全站資料狀態' },
+        { text: '使用 useContext & useReducer 設置全站跨元件狀態管理' },
+        { text: '使用 Redux-toolkit 設置全站跨元件狀態管理' },
+        { text: '使用 RTK Query 管理 API 數據獲取和緩存' },
         { text: '使用 React-Hook-Form 管理與驗證表單資料' },
+        { text: '學習 Next.js 用於建立 SSR 專案中 ' },
     ];
 
     const javaScriptSkillList = [
@@ -16,6 +18,7 @@ const HomeSkillSection = () => {
         { text: '透過 AJAX 做 API 資料串接' },
         { text: '處理非同步 Promise、async/await' },
         { text: '使用 Axios 套件呼叫 API 取得資料' },
+        { text: '學習 TypeScript 強型別擴充' },
     ];
 
     const nodeSkillList = [
@@ -33,21 +36,22 @@ const HomeSkillSection = () => {
         { text: '使用 SCSS  開發網站樣式管理' },
         { text: '了解 SMACSS / OOCSS 開發設計模式' },
         { text: '具備 Bootstrap 5 使用經驗' },
+        { text: '學習 Tailwind css ' },
         { text: '使用 Git 版本控制' },
     ];
 
     return (
-        <div className='mt-4 mt-sm-5'>
+        <div className="mt-4 mt-sm-5">
             <FramerMotion>
-                <h3 className='fw-bolder'>
-                    技能<span className='text-primary fs-4 ms-2'>Skill</span>
+                <h3 className="fw-bolder">
+                    技能<span className="text-primary fs-4 ms-2">Skill</span>
                 </h3>
             </FramerMotion>
-            <div className='row'>
-                <div className='col-12 col-sm-6 '>
+            <div className="row">
+                <div className="col-12 col-sm-6 ">
                     <FramerMotion>
                         <List
-                            listTitle='React.js'
+                            listTitle="React.js"
                             listData={reactSkillList}
                             border={true}
                             margin={'mb-3'}
@@ -55,10 +59,10 @@ const HomeSkillSection = () => {
                         />
                     </FramerMotion>
                 </div>
-                <div className='col-12 col-sm-6'>
+                <div className="col-12 col-sm-6">
                     <FramerMotion>
                         <List
-                            listTitle='JavaScript'
+                            listTitle="JavaScript"
                             listData={javaScriptSkillList}
                             border={true}
                             margin={'mb-3'}
@@ -66,10 +70,10 @@ const HomeSkillSection = () => {
                         />
                     </FramerMotion>
                 </div>
-                <div className='col-12 col-sm-6'>
+                <div className="col-12 col-sm-6">
                     <FramerMotion>
                         <List
-                            listTitle='Node.js'
+                            listTitle="Node.js"
                             listData={nodeSkillList}
                             border={true}
                             margin={'mb-3'}
@@ -77,10 +81,10 @@ const HomeSkillSection = () => {
                         />
                     </FramerMotion>
                 </div>
-                <div className='col-12 col-sm-6'>
+                <div className="col-12 col-sm-6">
                     <FramerMotion>
                         <List
-                            listTitle='Web Layout'
+                            listTitle="Web Layout"
                             listData={webLayoutSkillList}
                             border={true}
                             margin={'mb-3'}

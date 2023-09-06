@@ -9,15 +9,15 @@ import AboutPage from './pages/aboutPage/AboutPage';
 
 function App() {
     return (
-        <div className='App'>
+        <>
             <Routes>
-                <Route path='/' element={<Layout />}>
+                <Route path="/" element={<Layout />}>
                     <Route index element={<HomePage />} />
-                    <Route path='/workSamples' element={<WorkSamplesPage />} />
-                    <Route path='/about' element={<AboutPage />} />
+                    <Route path="/workSamples" element={<WorkSamplesPage />} />
+                    <Route path="/about" element={<AboutPage />} />
                 </Route>
             </Routes>
-        </div>
+        </>
     );
 }
 

@@ -42,8 +42,6 @@ import demo5_Img3 from '../../images/demo5/demo5-3.webp';
 import demo5_Img4 from '../../images/demo5/demo5-4.webp';
 import demo5_Img5 from '../../images/demo5/demo5-5.webp';
 import demo5_Img6 from '../../images/demo5/demo5-6.webp';
-import demo5_Img7 from '../../images/demo5/demo5-7.webp';
-import demo5_Img8 from '../../images/demo5/demo5-8.webp';
 import demo5_Img9 from '../../images/demo5/demo5-9.webp';
 import demo5_Img10 from '../../images/demo5/demo5-10.webp';
 import demo5_Img11 from '../../images/demo5/demo5-11.webp';
@@ -78,15 +76,27 @@ const HomeWorkSamplesSection = () => {
         { img: demo1_Img7, alt: 'demo1展示' },
     ];
     const demo1LinkList = [
-        { title: '作品 DEMO 連結：', path: 'https://ben0588.github.io/shopping_site/', text: '跨站觀看' },
+        {
+            title: '作品 DEMO 連結：',
+            path: 'https://ben0588.github.io/shopping_site/',
+            text: '跨站觀看',
+        },
         {
             title: '會員系統展示：',
             path: 'https://www.awesomescreenshot.com/video/16645056?key=9c2238c9526bd23680646344798f8527',
             text: '本站觀看',
             videoPath: demo1_Mp41,
         },
-        { title: '前端 GitHub 連結：', path: 'https://github.com/ben0588/shopping_site/tree/main', text: '跨站觀看' },
-        { title: '後端 GitHub 連結', path: 'https://github.com/ben0588/node_shopping_site', text: '跨站觀看' },
+        {
+            title: '前端 GitHub 連結：',
+            path: 'https://github.com/ben0588/shopping_site/tree/main',
+            text: '跨站觀看',
+        },
+        {
+            title: '後端 GitHub 連結',
+            path: 'https://github.com/ben0588/node_shopping_site',
+            text: '跨站觀看',
+        },
         {
             title: 'Swagger UI 展示 API 文件：',
             path: 'https://www.awesomescreenshot.com/video/16523212?key=124967b030a390339c2130f7b9627996',
@@ -127,7 +137,11 @@ const HomeWorkSamplesSection = () => {
         { img: demo2_Img5, alt: 'demo2展示' },
     ];
     const demo2LinkList = [
-        { title: '作品 DEMO 連結：', path: 'https://ben0588.github.io/hexagon_react_finally_api/', text: '跨站觀看' },
+        {
+            title: '作品 DEMO 連結：',
+            path: 'https://ben0588.github.io/hexagon_react_finally_api/',
+            text: '跨站觀看',
+        },
     ];
     const demo2FrontEndTechList = [
         { text: '使用 React Hook 架構進行開發' },
@@ -147,7 +161,11 @@ const HomeWorkSamplesSection = () => {
     ];
     const demo3LinkList = [
         { title: '作品連結：', text: '本站觀看', videoPath: demo3_Mp41 },
-        { title: '備註：', text: '本作品五人協力，僅負責首頁+購物車+金流', path: false },
+        {
+            title: '備註：',
+            text: '本作品五人協力，僅負責首頁+購物車+金流',
+            path: false,
+        },
     ];
     const demo3FrontEndTechList = [
         { text: '使用 React Class 架構進行開發' },
@@ -170,8 +188,16 @@ const HomeWorkSamplesSection = () => {
         { img: demo4_Img6, alt: 'demo4展示' },
     ];
     const demo4LinkList = [
-        { title: '作品連結：', path: 'https://ben0588.github.io/ColorsReference/', text: '跨站觀看' },
-        { title: 'GitHub連結：', path: 'https://github.com/ben0588/ColorsReference/', text: '跨站觀看' },
+        {
+            title: '作品連結：',
+            path: 'https://ben0588.github.io/ColorsReference/',
+            text: '跨站觀看',
+        },
+        {
+            title: 'GitHub連結：',
+            path: 'https://github.com/ben0588/ColorsReference/',
+            text: '跨站觀看',
+        },
     ];
     const demo4FrontEndTechList = [
         { text: '使用 Vite/React 開發專案。' },
@@ -196,8 +222,6 @@ const HomeWorkSamplesSection = () => {
         { img: demo5_Img4, alt: 'demo5展示' },
         { img: demo5_Img5, alt: 'demo5展示' },
         { img: demo5_Img6, alt: 'demo5展示' },
-        { img: demo5_Img7, alt: 'demo5展示' },
-        { img: demo5_Img8, alt: 'demo5展示' },
         { img: demo5_Img9, alt: 'demo5展示' },
         { img: demo5_Img10, alt: 'demo5展示' },
         { img: demo5_Img11, alt: 'demo5展示' },
@@ -205,14 +229,23 @@ const HomeWorkSamplesSection = () => {
     ];
 
     const demo5LinkList = [
-        { title: '作品連結：', path: 'https://ben0588.github.io/react-fragrance-dawn/#/', text: '跨站觀看' },
-        { title: 'GitHub連結：', path: 'https://github.com/ben0588/react-fragrance-dawn', text: '跨站觀看' },
+        {
+            title: '作品連結：',
+            path: 'https://ben0588.github.io/react-fragrance-dawn/#/',
+            text: '跨站觀看',
+        },
+        {
+            title: 'GitHub連結：',
+            path: 'https://github.com/ben0588/react-fragrance-dawn',
+            text: '跨站觀看',
+        },
     ];
 
     const demo5FrontEndTechList = [
         { text: '使用 Vite / React 開發專案' },
         { text: '使用 React-Router-Dom 設置路由 Router ' },
         { text: '使用 Redux-toolkit 完成全域狀態管理' },
+        { text: '使用 RTK Query 管理 API 數據獲取和緩存' },
         { text: '使用 Redux-persist 完成資料本地端自動儲存與刪除' },
         { text: '使用 Axios 透過 AJAX 呼叫後端 API 取得 JSON 資料' },
         { text: '使用 Bootstrap5 進行開發樣式，且支持 RWD 響應式' },
@@ -228,18 +261,26 @@ const HomeWorkSamplesSection = () => {
         { text: '使用者可輸入活動提供的優惠碼，結帳時後輸入並獲得現金折扣' },
         { text: '使用者填寫付款資訊後將建立訂單，並可選擇付款方式，完成購買' },
         { text: '使用者付款與未付款訂單資訊，可隨時追蹤訂單進度' },
-        { text: '使用者可設定首頁是否接收通知訊息，以便收到關於促銷等活動通知' },
+        {
+            text: '使用者可設定首頁是否接收通知訊息，以便收到關於促銷等活動通知',
+        },
         { text: '使用者可前往文章專欄查看近期優質文章' },
         { text: '使用者可前往優惠頁查看近期舉辦活動資訊' },
         { text: '管理者可登入或登入後台' },
         { text: '管理者可使用後台管理商品資訊，並依照產品類別進行搜尋' },
-        { text: '管理者可新增、編輯、刪除商品資訊，並且前台商品資訊也一併更動' },
+        {
+            text: '管理者可新增、編輯、刪除商品資訊，並且前台商品資訊也一併更動',
+        },
         { text: '管理者可使用後台管理優惠卷資訊' },
-        { text: '管理者可新增、編輯、刪除優惠卷資訊，並且前台優惠碼資訊也一併更動' },
+        {
+            text: '管理者可新增、編輯、刪除優惠卷資訊，並且前台優惠碼資訊也一併更動',
+        },
         { text: '管理者可使用後台管理訂單資訊' },
         { text: '管理者可編輯訂單資訊，並且前台訂單資訊也一併更動' },
         { text: '管理者可使用後台管理文章資訊' },
-        { text: '管理者可新增、編輯、刪除文章資訊，並且前台文章資訊也一併更動' },
+        {
+            text: '管理者可新增、編輯、刪除文章資訊，並且前台文章資訊也一併更動',
+        },
     ];
     const demo5BackEndTechList = false;
 
@@ -256,8 +297,16 @@ const HomeWorkSamplesSection = () => {
     ];
 
     const demo6LinkList = [
-        { title: '作品連結：', path: 'https://ben0588.github.io/react-todolist/#/', text: '跨站觀看' },
-        { title: 'GitHub連結：', path: 'https://github.com/ben0588/react-todolist', text: '跨站觀看' },
+        {
+            title: '作品連結：',
+            path: 'https://ben0588.github.io/react-todolist/#/',
+            text: '跨站觀看',
+        },
+        {
+            title: 'GitHub連結：',
+            path: 'https://github.com/ben0588/react-todolist',
+            text: '跨站觀看',
+        },
     ];
 
     const demo6FrontEndTechList = [
@@ -285,7 +334,7 @@ const HomeWorkSamplesSection = () => {
     };
 
     return (
-        <div className='mt-4 mt-sm-5'>
+        <div className="mt-4 mt-sm-5">
             {/* 控制是否展示影片視窗 */}
             {isModalOpen ? (
                 <BounceVideo
@@ -296,19 +345,20 @@ const HomeWorkSamplesSection = () => {
             ) : null}
 
             <FramerMotion>
-                <h3 className='fw-bolder mb-4'>
-                    作品集<span className='text-primary fs-4 ms-2'>Work samples</span>
+                <h3 className="fw-bolder mb-4">
+                    作品集
+                    <span className="text-primary fs-4 ms-2">Work samples</span>
                 </h3>
             </FramerMotion>
-            <div className='row align-items-center m-0 '>
-                <div className='col-12 mt-3'>
-                    <div className='row align-items-center border border-2'>
-                        <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
+            <div className="row align-items-center m-0 ">
+                <div className="col-12 mt-3">
+                    <div className="row align-items-center border border-2">
+                        <div className="col-12 col-sm-5  border-end border- mt-2 mt-sm-02 ">
                             <FramerMotion>
                                 <LayoutSwiper listData={demo5ImgList} />
                             </FramerMotion>
                         </div>
-                        <div className='col-12 col-sm-7 '>
+                        <div className="col-12 col-sm-7 ">
                             <FramerMotion>
                                 <DemoList
                                     demoTitle={'香氛晨光'}
@@ -323,14 +373,14 @@ const HomeWorkSamplesSection = () => {
                     </div>
                 </div>
 
-                <div className='col-12 mt-3'>
-                    <div className='row align-items-center border border-2'>
-                        <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
+                <div className="col-12 mt-3">
+                    <div className="row align-items-center border border-2">
+                        <div className="col-12 col-sm-5  border-end border- mt-2 mt-sm-02 ">
                             <FramerMotion>
                                 <LayoutSwiper listData={demo6ImgList} />
                             </FramerMotion>
                         </div>
-                        <div className='col-12 col-sm-7 '>
+                        <div className="col-12 col-sm-7 ">
                             <FramerMotion>
                                 <DemoList
                                     demoTitle={'TODO LIST'}
@@ -345,14 +395,14 @@ const HomeWorkSamplesSection = () => {
                     </div>
                 </div>
 
-                <div className='col-12  mt-3'>
-                    <div className='row align-items-center border border-2'>
-                        <div className='col-12 col-sm-5  border-end border- mt-2 mt-sm-02 '>
+                <div className="col-12  mt-3">
+                    <div className="row align-items-center border border-2">
+                        <div className="col-12 col-sm-5  border-end border- mt-2 mt-sm-02 ">
                             <FramerMotion>
                                 <LayoutSwiper listData={demo4ImgList} />
                             </FramerMotion>
                         </div>
-                        <div className='col-12 col-sm-7 '>
+                        <div className="col-12 col-sm-7 ">
                             <FramerMotion>
                                 <DemoList
                                     demoTitle={'記錄色碼'}
@@ -367,14 +417,14 @@ const HomeWorkSamplesSection = () => {
                     </div>
                 </div>
 
-                <div className='col-12 mt-3'>
-                    <div className='row align-items-center border border-2'>
-                        <div className='col-12 col-sm-5 border-end border- mt-2 mt-sm-02 '>
+                <div className="col-12 mt-3">
+                    <div className="row align-items-center border border-2">
+                        <div className="col-12 col-sm-5 border-end border- mt-2 mt-sm-02 ">
                             <FramerMotion>
                                 <LayoutSwiper listData={demo1ImgList} />
                             </FramerMotion>
                         </div>
-                        <div className='col-12 col-sm-7 '>
+                        <div className="col-12 col-sm-7 ">
                             <FramerMotion>
                                 <DemoList
                                     demoTitle={'源點。線上網球購物中心'}
@@ -406,14 +456,14 @@ const HomeWorkSamplesSection = () => {
                     </div>
                 </div> */}
 
-                <div className='col-12 mt-3'>
-                    <div className='row  align-items-center border border-2'>
-                        <div className='col-12 col-sm-5  border-end border-2 mt-2 mt-sm-0 '>
+                <div className="col-12 mt-3">
+                    <div className="row  align-items-center border border-2">
+                        <div className="col-12 col-sm-5  border-end border-2 mt-2 mt-sm-0 ">
                             <FramerMotion>
                                 <LayoutSwiper listData={demo3ImgList} />
                             </FramerMotion>
                         </div>
-                        <div className='col-12 col-sm-7 '>
+                        <div className="col-12 col-sm-7 ">
                             <FramerMotion>
                                 <DemoList
                                     demoTitle={'Spost+ 運動整合平台'}
