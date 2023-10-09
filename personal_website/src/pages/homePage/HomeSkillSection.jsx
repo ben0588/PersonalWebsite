@@ -3,41 +3,34 @@ import List from '../../components/common/List';
 
 const HomeSkillSection = () => {
     const reactSkillList = [
-        { text: '使用 Function Hook 架構開發' },
         { text: '使用 Vite、CRA 開發 React 專案' },
         { text: '使用 React-Router-Dom 管理路由與身分驗證' },
-        { text: '使用 useContext & useReducer 設置全站跨元件狀態管理' },
         { text: '使用 Redux-toolkit 設置全站跨元件狀態管理' },
         { text: '使用 RTK Query 管理 API 數據獲取和緩存' },
         { text: '使用 React-Hook-Form 管理與驗證表單資料' },
-        { text: '學習 Next.js 用於建立 SSR 專案中 ' },
     ];
 
     const javaScriptSkillList = [
         { text: '了解並使用 JavaScript ES6+ 特性' },
-        { text: '透過 AJAX 做 API 資料串接' },
+        { text: '使用 Axios 透過 AJAX 取得 JSON 資料' },
         { text: '處理非同步 Promise、async/await' },
-        { text: '使用 Axios 套件呼叫 API 取得資料' },
         { text: '學習 TypeScript 強型別擴充' },
     ];
 
     const nodeSkillList = [
-        { text: '使用 express.js 建立 Web Server 應用' },
+        { text: '使用 Express.js 建立 Web Server 應用' },
         { text: '設置 RESTful API 風格開發 Route 接口' },
         { text: '使用 jsonwebtoken 設置 JWT 用戶權限驗證' },
-        { text: '使用 express-session 驗證管理者權限' },
         { text: '使用 express 連接 MySQL 資料庫操作 CRUD' },
         { text: '使用 swagger-ui-express 產生線上 API 文件' },
     ];
 
     const webLayoutSkillList = [
-        { text: '瞭解 HTML5 / CSS3 網站設計' },
-        { text: '手刻 RWD 響應式網站' },
-        { text: '使用 SCSS  開發網站樣式管理' },
-        { text: '了解 SMACSS / OOCSS 開發設計模式' },
-        { text: '具備 Bootstrap 5 使用經驗' },
-        { text: '學習 Tailwind css ' },
-        { text: '使用 Git 版本控制' },
+        { text: '瞭解 HTML5 / CSS3 / 實作原生 RWD' },
+        { text: '使用 SCSS 開發網站樣式管理與預處理' },
+        { text: '使用 Bootstrap 5 樣式並實作 RWD 響應式' },
+        { text: '學習 Tailwind.css 熱門 CSS 框架技術' },
+        { text: '使用 ESLint、Prettier 管理程式法風格與品質' },
     ];
 
     return (

@@ -21,7 +21,7 @@ const HomePersonalInfoSection = () => {
             text: '聯絡信箱',
         },
         {
-            title: 'HackMD',
+            title: '筆記目錄',
             path: 'https://hackmd.io/@bGZ4YNduQJmEb3VN_d3Vng/SkDQJqmm3',
             icon: <HiDocumentText />,
             text: '個人筆記目錄',
@@ -75,7 +75,7 @@ const HomePersonalInfoSection = () => {
                     initial={{ x: 100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                 >
-                    Hi，我叫張勝翔(Ben)，南投人現居台中，個性慢熱，MBTI人格：INFJ，過去從事客服相關工作，2022年轉職挑戰前端工程師，曾參加過實體課程、線上課程、閱讀相關書籍，並通過個人專案來應用所學知識，也持續學習不同技能。
+                    Hi，我叫張勝翔(Ben)，南投人現居台中，擁有細心、耐心的特質，2022年轉職挑戰前端工程師，曾參加過實體課程、線上課程、閱讀相關書籍，並通過個人專案來應用所學知識，也持續學習不同技能。
                 </motion.p>
             </div>
         </div>

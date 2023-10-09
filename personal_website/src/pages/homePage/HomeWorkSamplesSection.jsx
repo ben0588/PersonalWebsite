@@ -104,28 +104,35 @@ const HomeWorkSamplesSection = () => {
             videoPath: demo1_Mp42,
         },
     ];
-    const demo1FrontEndTechList = [
-        { text: '使用 React Hook 架構進行開發' },
-        { text: '使用 create-react-app 開發專案' },
-        { text: '使用 react-hook-form 管理與驗證表單資料' },
-        { text: '使用 useContext & useReducer 狀態管理' },
-        { text: '使用 axios 串接後端 api 資料' },
-        { text: '使用支持第三方登入 ( Facebook/Google/Line/Github )' },
-        { text: '使用 SCSS 手刻 RWD 響應式 1140~320px' },
-    ];
-    const demo1BackEndTechList = [
-        { text: '使用 Node/express 建立 Web Server 應用' },
-        { text: '設置 RESTful API 風格開發 Route 接口 ' },
-        { text: '使用 jsonwebtoken 設置用戶權限驗證 (JWT)' },
-        { text: '使用 MySQL 連接資料庫操作 CRUD' },
-        { text: '使用 swagger-ui-express 產生線上 API 文件' },
-    ];
+    // const demo1FrontEndTechList = [
+    //     { text: '使用 React Hook 架構進行開發' },
+    //     { text: '使用 create-react-app 開發專案' },
+    //     { text: '使用 react-hook-form 管理與驗證表單資料' },
+    //     { text: '使用 useContext & useReducer 狀態管理' },
+    //     { text: '使用 axios 串接後端 api 資料' },
+    //     { text: '使用支持第三方登入 ( Facebook/Google/Line/Github )' },
+    //     { text: '使用 SCSS 手刻 RWD 響應式 1140~320px' },
+    // ];
+    // const demo1BackEndTechList = [
+    //     { text: '使用 Node/express 建立 Web Server 應用' },
+    //     { text: '設置 RESTful API 風格開發 Route 接口 ' },
+    //     { text: '使用 jsonwebtoken 設置用戶權限驗證 (JWT)' },
+    //     { text: '使用 MySQL 連接資料庫操作 CRUD' },
+    //     { text: '使用 swagger-ui-express 產生線上 API 文件' },
+    // ];
+    // const demo1FunctionDescription = [
+    //     { text: '使用者可使用官網註冊或者第三方登入' },
+    //     { text: '使用者登入之後可以編輯個人資料與刪除帳戶存在' },
+    //     { text: '使用者可使用忘記密碼功能' },
+    //     { text: '使用者可使用新增商品至購物車，且可編輯購物車數量與刪除商品' },
+    //     { text: '使用者可使用新增商品至願望清單，且可編輯願望清單與刪除商品' },
+    // ];
+    const demo1FrontEndTechList = [{ text: 'React、Sass、Express、MySQL' }];
+    const demo1BackEndTechList = false;
     const demo1FunctionDescription = [
-        { text: '使用者可使用官網註冊或者第三方登入' },
-        { text: '使用者登入之後可以編輯個人資料與刪除帳戶存在' },
-        { text: '使用者可使用忘記密碼功能' },
-        { text: '使用者可使用新增商品至購物車，且可編輯購物車數量與刪除商品' },
-        { text: '使用者可使用新增商品至願望清單，且可編輯願望清單與刪除商品' },
+        {
+            text: '這是一個網球電商平台，使用者可以註冊或第三方登入，編輯個人資料，刪除帳戶，重設密碼。可以新增商品至願望清單 、購物車，編輯商品數量或刪除商品。',
+        },
     ];
 
     // demo2 (todoList) 作品開始：
@@ -163,21 +170,27 @@ const HomeWorkSamplesSection = () => {
         { title: '作品連結：', text: '本站觀看', videoPath: demo3_Mp41 },
         {
             title: '備註：',
-            text: '本作品五人協力，僅負責首頁+購物車+金流',
+            text: '本作品五人協力，個人負責首頁+購物車+金流',
             path: false,
         },
     ];
-    const demo3FrontEndTechList = [
-        { text: '使用 React Class 架構進行開發' },
-        { text: '使用 create-react-app 開發專案' },
-        { text: '使用 react-router-dom 管理路由' },
-        { text: '使用 axios 套件串接整合 api 完成 CRUD 操作' },
+    // const demo3FrontEndTechList = [
+    //     { text: '使用 React Class 架構進行開發' },
+    //     { text: '使用 create-react-app 開發專案' },
+    //     { text: '使用 react-router-dom 管理路由' },
+    //     { text: '使用 axios 套件串接整合 api 完成 CRUD 操作' },
+    // ];
+    // const demo3BackEndTechList = [
+    //     { text: '使用 PHP 串接 MySQL 操作 CRUD' },
+    //     { text: '使用 PHP 串接 綠界金流 ECPay 完成付款測試' },
+    // ];
+    const demo3FunctionDescription = [
+        {
+            text: '這是一個運動教練和場館搜尋平台，旨在讓民眾更容易尋找適合的教練和場館，同時讓教練方和場館方更容易有曝光的機會，創造消費者、教練、場館三贏的局面。',
+        },
     ];
-    const demo3BackEndTechList = [
-        { text: '使用 PHP 串接 MySQL 操作 CRUD' },
-        { text: '使用 PHP 串接 綠界金流 ECPay 完成付款測試' },
-    ];
-
+    const demo3FrontEndTechList = [{ text: 'React、Bootstrap5、PHP' }];
+    const demo3BackEndTechList = false;
     // demo4 (色碼紀錄) 作品開始：
     const demo4ImgList = [
         { img: demo4_Img1, alt: 'demo4展示' },
@@ -199,19 +212,27 @@ const HomeWorkSamplesSection = () => {
             text: '跨站觀看',
         },
     ];
+    // const demo4FrontEndTechList = [
+    //     { text: '使用 Vite/React 開發專案。' },
+    //     { text: '使用 Redux-toolkit 完成全域狀態管理。' },
+    //     { text: '使用 Redux-persist 完成資料本地端自動儲存與刪除。' },
+    //     { text: '使用 Bootstrap5 進行開發樣式' },
+    //     { text: '使用 react-bootstrap 模組開發' },
+    // ];
+    // const demo4FunctionDescription = [
+    //     { text: '使用者可新增一組五個色碼設定' },
+    //     { text: '色碼設定完畢之後會依照顏色區塊顯示' },
+    //     { text: '支持滑鼠左鍵點擊後複製顏色代碼' },
+    //     { text: '使用者可新增編輯刪除色碼之設定' },
+    //     { text: '支持頁面重新整理不會丟失紀錄，但更換裝置會遺失紀錄' },
+    // ];
     const demo4FrontEndTechList = [
-        { text: '使用 Vite/React 開發專案。' },
-        { text: '使用 Redux-toolkit 完成全域狀態管理。' },
-        { text: '使用 Redux-persist 完成資料本地端自動儲存與刪除。' },
-        { text: '使用 Bootstrap5 進行開發樣式' },
-        { text: '使用 react-bootstrap 模組開發' },
+        { text: 'React、Redux、Bootstrap5、Redux-persist' },
     ];
     const demo4FunctionDescription = [
-        { text: '使用者可新增一組五個色碼設定' },
-        { text: '色碼設定完畢之後會依照顏色區塊顯示' },
-        { text: '支持滑鼠左鍵點擊後複製顏色代碼' },
-        { text: '使用者可新增編輯刪除色碼之設定' },
-        { text: '支持頁面重新整理不會丟失紀錄，但更換裝置會遺失紀錄' },
+        {
+            text: '這是一個色碼設定工具，可以新增、編輯和刪除色碼，並以顏色區塊方式顯示。用戶可以使用滑鼠左鍵點擊以複製顏色代碼，更換裝置會遺失紀錄。',
+        },
     ];
 
     // demo5 (香水電商網站) 作品開始：
@@ -241,48 +262,58 @@ const HomeWorkSamplesSection = () => {
         },
     ];
 
-    const demo5FrontEndTechList = [
-        { text: '使用 Vite / React 開發專案' },
-        { text: '使用 React-Router-Dom 設置路由 Router ' },
-        { text: '使用 Redux-toolkit 完成全域狀態管理' },
-        { text: '使用 RTK Query 管理 API 數據獲取和緩存' },
-        { text: '使用 Redux-persist 完成資料本地端自動儲存與刪除' },
-        { text: '使用 Axios 透過 AJAX 呼叫後端 API 取得 JSON 資料' },
-        { text: '使用 Bootstrap5 進行開發樣式，且支持 RWD 響應式' },
-        { text: '使用 SCSS 完成部分客製化 CSS 樣式' },
-        { text: '使用 React-Bootstrap 模組開發' },
-        { text: '使用 Framer-Motion 完成視差滾動效果' },
-    ];
-    const demo5FunctionDescription = [
-        { text: '使用者可在首頁中使用眾多功能' },
-        { text: '使用者可在商品列表中使用類別、關鍵字搜尋，支持商品排序' },
-        { text: '使用者可將心儀商品加入追蹤清單，並支持刪除功能' },
-        { text: '使用者可將心儀商品加入購物車，並支持編輯商品數量與刪除' },
-        { text: '使用者可輸入活動提供的優惠碼，結帳時後輸入並獲得現金折扣' },
-        { text: '使用者填寫付款資訊後將建立訂單，並可選擇付款方式，完成購買' },
-        { text: '使用者付款與未付款訂單資訊，可隨時追蹤訂單進度' },
-        {
-            text: '使用者可設定首頁是否接收通知訊息，以便收到關於促銷等活動通知',
-        },
-        { text: '使用者可前往文章專欄查看近期優質文章' },
-        { text: '使用者可前往優惠頁查看近期舉辦活動資訊' },
-        { text: '管理者可登入或登入後台' },
-        { text: '管理者可使用後台管理商品資訊，並依照產品類別進行搜尋' },
-        {
-            text: '管理者可新增、編輯、刪除商品資訊，並且前台商品資訊也一併更動',
-        },
-        { text: '管理者可使用後台管理優惠卷資訊' },
-        {
-            text: '管理者可新增、編輯、刪除優惠卷資訊，並且前台優惠碼資訊也一併更動',
-        },
-        { text: '管理者可使用後台管理訂單資訊' },
-        { text: '管理者可編輯訂單資訊，並且前台訂單資訊也一併更動' },
-        { text: '管理者可使用後台管理文章資訊' },
-        {
-            text: '管理者可新增、編輯、刪除文章資訊，並且前台文章資訊也一併更動',
-        },
-    ];
+    // const demo5FrontEndTechList = [
+    //     { text: '使用 Vite / React 開發專案' },
+    //     { text: '使用 React-Router-Dom 設置路由 Router ' },
+    //     { text: '使用 Redux-toolkit 完成全域狀態管理' },
+    //     { text: '使用 RTK Query 管理 API 數據獲取和緩存' },
+    //     { text: '使用 Redux-persist 完成資料本地端自動儲存與刪除' },
+    //     { text: '使用 Axios 透過 AJAX 呼叫後端 API 取得 JSON 資料' },
+    //     { text: '使用 Bootstrap5 進行開發樣式，且支持 RWD 響應式' },
+    //     { text: '使用 SCSS 完成部分客製化 CSS 樣式' },
+    //     { text: '使用 React-Bootstrap 模組開發' },
+    //     { text: '使用 Framer-Motion 完成視差滾動效果' },
+    // ];
+
+    // const demo5FunctionDescription = [
+    //     { text: '使用者可在首頁中使用眾多功能' },
+    //     { text: '使用者可在商品列表中使用類別、關鍵字搜尋，支持商品排序' },
+    //     { text: '使用者可將心儀商品加入追蹤清單，並支持刪除功能' },
+    //     { text: '使用者可將心儀商品加入購物車，並支持編輯商品數量與刪除' },
+    //     { text: '使用者可輸入活動提供的優惠碼，結帳時後輸入並獲得現金折扣' },
+    //     { text: '使用者填寫付款資訊後將建立訂單，並可選擇付款方式，完成購買' },
+    //     { text: '使用者付款與未付款訂單資訊，可隨時追蹤訂單進度' },
+    //     {
+    //         text: '使用者可設定首頁是否接收通知訊息，以便收到關於促銷等活動通知',
+    //     },
+    //     { text: '使用者可前往文章專欄查看近期優質文章' },
+    //     { text: '使用者可前往優惠頁查看近期舉辦活動資訊' },
+    //     { text: '管理者可登入或登入後台' },
+    //     { text: '管理者可使用後台管理商品資訊，並依照產品類別進行搜尋' },
+    //     {
+    //         text: '管理者可新增、編輯、刪除商品資訊，並且前台商品資訊也一併更動',
+    //     },
+    //     { text: '管理者可使用後台管理優惠卷資訊' },
+    //     {
+    //         text: '管理者可新增、編輯、刪除優惠卷資訊，並且前台優惠碼資訊也一併更動',
+    //     },
+    //     { text: '管理者可使用後台管理訂單資訊' },
+    //     { text: '管理者可編輯訂單資訊，並且前台訂單資訊也一併更動' },
+    //     { text: '管理者可使用後台管理文章資訊' },
+    //     {
+    //         text: '管理者可新增、編輯、刪除文章資訊，並且前台文章資訊也一併更動',
+    //     },
+    // ];
+
     const demo5BackEndTechList = false;
+
+    const demo5FrontEndTechList = [{ text: 'React、Redux、Bootstrap5、Sass' }];
+
+    const demo5FunctionDescription = [
+        {
+            text: '這是一個香水電商網站專案，旨在提供用戶瀏覽和購買香水產品的平台，擁有前後台功能，擁有動態網站特性，具備前後端分離。',
+        },
+    ];
 
     // demo6 (todolist待辦清單) 作品開始：
 
@@ -293,7 +324,7 @@ const HomeWorkSamplesSection = () => {
         { img: demo6_Img4, alt: 'demo6展示' },
         { img: demo6_Img5, alt: 'demo6展示' },
         { img: demo6_Img6, alt: 'demo6展示' },
-        { img: demo6_Img7, alt: 'demo6展示' },
+        // { img: demo6_Img7, alt: 'demo6展示' },
     ];
 
     const demo6LinkList = [
@@ -309,21 +340,30 @@ const HomeWorkSamplesSection = () => {
         },
     ];
 
-    const demo6FrontEndTechList = [
-        { text: '使用 Vite / React 開發專案' },
-        { text: '使用 React-Router-Dom 設置路由 Router ' },
-        { text: '使用 useContext + useReducer 跨元件狀態管理' },
-        { text: '使用 Axios 透過 AJAX 呼叫後端 API 取得 JSON 資料' },
-        { text: '使用 Bootstrap5 進行開發樣式，且支持 RWD 響應式' },
-        { text: '使用 SCSS 完成部分客製化 CSS 樣式' },
-    ];
+    // const demo6FrontEndTechList = [
+    //     { text: '使用 Vite / React 開發專案' },
+    //     { text: '使用 React-Router-Dom 設置路由 Router ' },
+    //     { text: '使用 useContext + useReducer 跨元件狀態管理' },
+    //     { text: '使用 Axios 透過 AJAX 呼叫後端 API 取得 JSON 資料' },
+    //     { text: '使用 Bootstrap5 進行開發樣式，且支持 RWD 響應式' },
+    //     { text: '使用 SCSS 完成部分客製化 CSS 樣式' },
+    // ];
+
+    // const demo6FunctionDescription = [
+    //     { text: '使用者可以使用登入與註冊功能(資料會在每日凌晨 1:15 清除)' },
+    //     { text: '使用者可查看待辦清單列表' },
+    //     { text: '使用者可依照待完成、已完成篩選清單列表' },
+    //     { text: '使用者可編輯清單項目內容' },
+    //     { text: '使用者可更改清單完成狀態' },
+    //     { text: '使用者可刪除單一清單項目與全部已完成清單內容' },
+    // ];
+
+    const demo6FrontEndTechList = [{ text: 'React、Bootstrap5、Axios、Sass' }];
+
     const demo6FunctionDescription = [
-        { text: '使用者可以使用登入與註冊功能(資料會在每日凌晨 1:15 清除)' },
-        { text: '使用者可查看待辦清單列表' },
-        { text: '使用者可依照待完成、已完成篩選清單列表' },
-        { text: '使用者可編輯清單項目內容' },
-        { text: '使用者可更改清單完成狀態' },
-        { text: '使用者可刪除單一清單項目與全部已完成清單內容' },
+        {
+            text: '這是一個待辦清單專案，用戶可以使用登入與註冊功能，建立屬於自己的代辦清單，可新增、編輯、刪除項目，並且更改清單內容',
+        },
     ];
     const demo6BackEndTechList = false;
 
@@ -383,7 +423,7 @@ const HomeWorkSamplesSection = () => {
                         <div className="col-12 col-sm-7 ">
                             <FramerMotion>
                                 <DemoList
-                                    demoTitle={'TODO LIST'}
+                                    demoTitle={'TODOLIST 代辦清單'}
                                     demoData={demo6LinkList}
                                     handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
                                     frontEndTechList={demo6FrontEndTechList}
@@ -471,6 +511,7 @@ const HomeWorkSamplesSection = () => {
                                     handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
                                     frontEndTechList={demo3FrontEndTechList}
                                     backEndTechList={demo3BackEndTechList}
+                                    description={demo3FunctionDescription}
                                 />
                             </FramerMotion>
                         </div>

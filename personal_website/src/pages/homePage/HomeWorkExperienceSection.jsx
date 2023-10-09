@@ -3,32 +3,23 @@ import List from '../../components/common/List';
 
 const HomeWorkExperienceSection = () => {
     const workExperienceValue1 = [
-        { text: '完成上級待辦事項' },
-        { text: '即時處理客戶提問、客訴案件' },
-        { text: '定期追蹤待處理案件' },
-        { text: '協助測試待上線案件並提交建議' },
-        { text: '與各部門溝通完成客戶提案' },
-        { text: '定期製作報表' },
+        { text: '與客戶進行即時文字溝通，解決客戶的問題或提供相關資訊。' },
+        { text: '分析客戶的問題，並協助他們解決技術或產品相關的問題。' },
+        {
+            text: ' 與其他部門（如技術支援、銷售、商品等）進行有效溝通，以處理客戶問題。',
+        },
     ];
 
     const workExperienceValue2 = [
-        { text: '線上即時文字處理客戶訂單、查詢及處理一般事宜' },
-        { text: '每日統計數據製作分析' },
-        { text: '派發網站活動獎勵' },
-        { text: '優惠活動構想排版' },
-        { text: '監控系統運作情況' },
-        { text: 'PC/H5官網用戶體驗優化建議' },
-        { text: 'PC/處理客戶客訴專案' },
+        { text: '及時回應客戶的查詢、問題和要求，提供有用的信息和解決方案。' },
+        { text: ' 維護客戶關係，提供優質的客戶服務，以提高客戶滿意度。' },
     ];
 
     const workExperienceValue3 = [
-        { text: '線上即時文字處理客戶訂單、查詢及處理一般事宜' },
-        { text: '每日統計數據製作分析' },
-        { text: '派發網站活動獎勵' },
-        { text: '優惠活動構想排版' },
-        { text: '監控系統運作情況' },
-        { text: 'PC/H5官網用戶體驗優化建議' },
-        { text: 'PC/處理客戶客訴專案' },
+        { text: '線上即時文字處理客戶訂單、查詢及處理一般事宜。' },
+        {
+            text: '協助客戶解決在使用產品或服務中遇到的問題，並及時跟進問題的解決情況。',
+        },
     ];
 
     const workExperienceList = [
@@ -56,26 +47,34 @@ const HomeWorkExperienceSection = () => {
     ];
 
     return (
-        <div className='mt-5 mt-sm-5 '>
-            <h3 className='fw-bolder mb-3'>
+        <div className="mt-5 mt-sm-5 ">
+            <h3 className="fw-bolder mb-3">
                 <FramerMotion>
-                    工作經歷<span className='text-primary fs-4 ms-2'>Work Experience</span>
+                    工作經歷
+                    <span className="text-primary fs-4 ms-2">
+                        Work Experience
+                    </span>
                 </FramerMotion>
             </h3>
             <div>
                 {workExperienceList.map((item, index) => (
-                    <div key={index} className='border-top border-2'>
+                    <div key={index} className="border-top border-2">
                         <FramerMotion>
-                            <div className='d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-3 mb-1 '>
-                                <h5 className='d-inline-block fw-bolder mb-0 me-2'>{item.company}</h5>
-                                <span className='fw-bolder fs-6 me-2'> | {item.position} </span>
-                                <small className='text-muted'>
+                            <div className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-3 mb-1 ">
+                                <h5 className="d-inline-block fw-bolder mb-0 me-2">
+                                    {item.company}
+                                </h5>
+                                <span className="fw-bolder fs-6 me-2">
+                                    {' '}
+                                    | {item.position}{' '}
+                                </span>
+                                <small className="text-muted">
                                     {item.during} {item.duringSum}
                                 </small>
                             </div>
                         </FramerMotion>
                         <FramerMotion>
-                            <ul className='mb-4'>
+                            <ul className="mb-4">
                                 {item.dataList.map((items, i) => (
                                     <li key={i}>{items.text}</li>
                                 ))}

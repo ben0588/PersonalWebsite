@@ -17,7 +17,7 @@ const LayoutSwiper = ({ listData }) => {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    height: `500px`,
+                    height: `auto`,
                 }}
                 modules={[Autoplay, Navigation, Pagination]} // 引入動畫模組
                 autoplay={{
@@ -36,9 +36,9 @@ const LayoutSwiper = ({ listData }) => {
                         <SwiperSlide key={index} className="mySwiper ">
                             <img
                                 src={item.img}
-                                className="swiper-demo-img"
+                                className="swiper-demo-img "
                                 alt={item.alt}
-                                // style={{ height: `500px` }}
+                                style={{ objectFit: 'cover', height: 'auto' }}
                             />
                         </SwiperSlide>
                     );

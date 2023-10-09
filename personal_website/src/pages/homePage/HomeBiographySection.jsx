@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import FramerMotion from '../../components/common/FramerMotion';
 
 const HomeBiographySection = () => {
@@ -33,6 +34,15 @@ const HomeBiographySection = () => {
 
     return (
         <div className="mt-3 mt-sm-5">
+            <h3>
+                更多內容可參考個人履歷：
+                <Link
+                    to="https://www.cakeresume.com/energy9527z"
+                    target="_blank"
+                >
+                    Cakeresume線上履歷
+                </Link>
+            </h3>
             {/* <FramerMotion>
                 <h3 className='fw-bolder mb-3'>
                     自傳<span className='text-primary fs-4 ms-2'>Biography</span>
