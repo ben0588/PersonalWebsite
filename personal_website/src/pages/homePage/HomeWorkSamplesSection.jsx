@@ -56,6 +56,15 @@ import demo6_Img5 from '../../images/demo6/demo6-5.webp';
 import demo6_Img6 from '../../images/demo6/demo6-6.webp';
 import demo6_Img7 from '../../images/demo6/demo6-7.webp';
 
+// demo7 start
+import demo7_Img1 from '../../images/demo7/demo7_1.webp';
+import demo7_Img2 from '../../images/demo7/demo7_2.webp';
+import demo7_Img3 from '../../images/demo7/demo7_3.webp';
+import demo7_Img4 from '../../images/demo7/demo7_4.webp';
+import demo7_Img5 from '../../images/demo7/demo7_5.webp';
+import demo7_Img6 from '../../images/demo7/demo7_6.webp';
+import demo7_Img7 from '../../images/demo7/demo7_7.webp';
+
 // 其他元件
 import BounceVideo from '../../components/common/BounceVideo';
 import DemoList from '../../components/common/DemoList';
@@ -307,7 +316,7 @@ const HomeWorkSamplesSection = () => {
 
     const demo5BackEndTechList = false;
 
-    const demo5FrontEndTechList = [{ text: 'React、Redux、Bootstrap5、Sass' }];
+    const demo5FrontEndTechList = [{ text: 'Vite、React、Redux、Bootstrap5、Sass' }];
 
     const demo5FunctionDescription = [
         {
@@ -358,7 +367,7 @@ const HomeWorkSamplesSection = () => {
     //     { text: '使用者可刪除單一清單項目與全部已完成清單內容' },
     // ];
 
-    const demo6FrontEndTechList = [{ text: 'React、Bootstrap5、Axios、Sass' }];
+    const demo6FrontEndTechList = [{ text: 'Vite、React、Bootstrap5、Axios、Sass' }];
 
     const demo6FunctionDescription = [
         {
@@ -366,6 +375,43 @@ const HomeWorkSamplesSection = () => {
         },
     ];
     const demo6BackEndTechList = false;
+
+
+
+    // demo7 (vue_沐日家居) 作品開始：
+    const demo7ImgList = [
+        { img: demo7_Img1, alt: 'demo7展示' },
+        { img: demo7_Img2, alt: 'demo7展示' },
+        { img: demo7_Img3, alt: 'demo7展示' },
+        { img: demo7_Img4, alt: 'demo7展示' },
+        { img: demo7_Img5, alt: 'demo7展示' },
+        { img: demo7_Img6, alt: 'demo7展示' },
+        { img: demo7_Img7, alt: 'demo7展示' },
+    ];
+
+    const demo7LinkList = [
+        {
+            title: '作品連結：',
+            path: 'https://ben0588.github.io/vue_mu_ri_homeware/#/',
+            text: '跨站觀看',
+        },
+        {
+            title: 'GitHub連結：',
+            path: 'https://github.com/ben0588/vue_mu_ri_homeware',
+            text: '跨站觀看',
+        },
+    ];
+
+    const demo7FrontEndTechList = [{ text: 'Vite、Vue3(Composition API)、Bootstrap5、Axios、Sass' }];
+
+    const demo7FunctionDescription = [
+        {
+            text: '這是一個電商網站專案，旨在提供用戶瀏覽家居產品的線上平台，具備多裝置的RWD響應式設計，並且可以購買結帳功能，擁有前後台功能，擁有動態網站特性，具備前後端分離。',
+        },
+    ];
+    const demo7BackEndTechList = [
+        { text:'json-server'}
+    ];
 
     // 依照點選路徑不同而開啟彈跳畫面
     const handleClickVideo = (videoPath) => {
@@ -391,6 +437,28 @@ const HomeWorkSamplesSection = () => {
                 </h3>
             </FramerMotion>
             <div className="row align-items-center m-0 ">
+                <div className="col-12 mt-3">
+                    <div className="row align-items-center border border-2">
+                        <div className="col-12 col-sm-5  border-end border- mt-2 mt-sm-02 ">
+                            <FramerMotion>
+                                <LayoutSwiper listData={demo7ImgList} />
+                            </FramerMotion>
+                        </div>
+                        <div className="col-12 col-sm-7 ">
+                            <FramerMotion>
+                                <DemoList
+                                    demoTitle={'沐日家居'}
+                                    demoData={demo7LinkList}
+                                    handleClickVideo={handleClickVideo} // 控制打開及記錄影片路徑
+                                    frontEndTechList={demo7FrontEndTechList}
+                                    backEndTechList={demo7BackEndTechList}
+                                    description={demo7FunctionDescription}
+                                />
+                            </FramerMotion>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="col-12 mt-3">
                     <div className="row align-items-center border border-2">
                         <div className="col-12 col-sm-5  border-end border- mt-2 mt-sm-02 ">

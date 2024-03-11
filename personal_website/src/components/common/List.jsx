@@ -2,7 +2,7 @@ const List = ({ listTitle, listData, border, fontSize, margin, padding }) => {
     return (
         <div>
             {/* 增加判斷是否要底線 */}
-            <h4 className={`${border ? 'border-bottom border-2 border-primary' : ''} ${fontSize} ${padding} ${margin}`}>
+            <h4 className={`${border ? 'border-bottom border-2 border-primary' : ''} ${fontSize} ${padding} ${margin} fw-bolder`}>
                 {listTitle}
             </h4>
             <ul>
